@@ -1,1 +1,12 @@
+server:
+  port: 8761
 
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  instance:
+    hostname: localhost
+    preferIpAddress: true  # Use IP address instead of hostname
+  server:
+    enableSelfPreservation: false  # Disable self-preservation mode (optional)
